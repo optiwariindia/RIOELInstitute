@@ -4,7 +4,9 @@ if(isset($_REQUEST["name"]))
 file_put_contents("data.json",json_encode($_REQUEST));
 ?><!DOCTYPE html>
 <html lang="en">
-    <?php include "../includes/head.php"; ?>
+    <?php 
+    include "../includes/head.php"; 
+    ?>
 <body>
     <?php
     include "../includes/header.php";
