@@ -1,0 +1,11 @@
+.form-container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+.form-container .card{
+    max-width: 320px;
+}

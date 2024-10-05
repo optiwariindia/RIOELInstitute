@@ -1,4 +1,9 @@
 <?php
+
+function calculateSquare($number=1){
+    return $number * $number;
+}
+// echo calculateSquare();
 function getTitle($page){
     if($page== "/"){
         return "Home";

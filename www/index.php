@@ -15,6 +15,7 @@ file_put_contents("data.json",json_encode($_REQUEST));
     include "../includes/testimonials.php";
     include "../includes/footer.php";
     ?>
+    <script src="/js/script.js"></script>
 </body>
 </html>
 <?php
