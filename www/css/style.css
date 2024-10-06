@@ -9,3 +9,15 @@
 .form-container .card{
     max-width: 320px;
 }
+input.skipped.form-control:invalid{
+    border:red 1px solid;
+}
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+.error{
+    color:red;
+    font-size:12px;
+    text-align:right;
+}

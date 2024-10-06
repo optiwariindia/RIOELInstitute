@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input name="name" required pattern="^[a-z A-Z]+$" id="name" type="text" class="form-control">
+                    <input name="name" onblur="skipped(event)" required pattern="^[a-z A-Z]+$" id="name" type="text" class="form-control">
                 </div>
             </div>
             <div class="col-md-12">

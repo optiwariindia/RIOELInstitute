@@ -1,4 +1,18 @@
 <?php 
+/* 
+schema: 
+CREATE TABLE `visitor` (
+  `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` text NOT NULL,
+  `email` text NOT NULL,
+  `phone` text NOT NULL,
+  `createdAt` datetime NOT NULL,
+  `updatedAt` timestamp NOT NULL
+);
+
+INSERT INTO `visitor` (`name`, `email`, `phone`, `createdAt`, `updatedAt`)
+VALUES ('Om Prakash', 'optiwari.india@gmail.com', '+91 8130202879', now(), now());
+*/
 $page="/";
 if(isset($_REQUEST["name"]))
 file_put_contents("data.json",json_encode($_REQUEST));
