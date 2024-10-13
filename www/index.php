@@ -1,4 +1,6 @@
 <?php 
+include "../vendor/autoload.php";
+include "../includes/connection.php";
 /* 
 schema: 
 CREATE TABLE `visitor` (

@@ -4,7 +4,7 @@
         <div class="card-title">Contact Form</div>
     </div>
     <div class="card-body">
-        <form action="/index.php" class="row" method="post">
+        <form action="/visitors.php" class="row" method="post">
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="name">Name</label>

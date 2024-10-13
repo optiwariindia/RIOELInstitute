@@ -21,3 +21,24 @@ input.skipped.form-control:invalid{
     font-size:12px;
     text-align:right;
 }
+.visitor-list{
+    list-style: none;
+    display: flex;
+    gap:10px;
+}
+.visitor-list li{
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.visitor-list li span{
+    font-weight: bold;
+}
+.visitor-list li .name{
+    font-size:20px;
+}
+.visitor-list li .email{
+    color:blue;
+    font-size:12px;
+}

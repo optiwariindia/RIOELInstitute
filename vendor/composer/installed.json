@@ -1,0 +1,46 @@
+{
+    "packages": [
+        {
+            "name": "optiwariindia/database",
+            "version": "1.2.1",
+            "version_normalized": "1.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optiwariindia/database.git",
+                "reference": "c9e76dac02c7c71da0268cad1dd8f3a90e444184"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optiwariindia/database/zipball/c9e76dac02c7c71da0268cad1dd8f3a90e444184",
+                "reference": "c9e76dac02c7c71da0268cad1dd8f3a90e444184",
+                "shasum": ""
+            },
+            "time": "2021-04-22T13:09:35+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "optiwariindia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Om Tiwari",
+                    "email": "optiwari.india@gmail.com"
+                }
+            ],
+            "description": "A library to connect database and use basic activities in database like create,select,insert,update,delete and drop using predefined methods",
+            "support": {
+                "issues": "https://github.com/optiwariindia/database/issues",
+                "source": "https://github.com/optiwariindia/database/tree/1.2.1"
+            },
+            "install-path": "../optiwariindia/database"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

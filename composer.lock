@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2add3be516d0851712e92b3c7eadf60d",
+    "packages": [
+        {
+            "name": "optiwariindia/database",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optiwariindia/database.git",
+                "reference": "c9e76dac02c7c71da0268cad1dd8f3a90e444184"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optiwariindia/database/zipball/c9e76dac02c7c71da0268cad1dd8f3a90e444184",
+                "reference": "c9e76dac02c7c71da0268cad1dd8f3a90e444184",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "optiwariindia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Om Tiwari",
+                    "email": "optiwari.india@gmail.com"
+                }
+            ],
+            "description": "A library to connect database and use basic activities in database like create,select,insert,update,delete and drop using predefined methods",
+            "support": {
+                "issues": "https://github.com/optiwariindia/database/issues",
+                "source": "https://github.com/optiwariindia/database/tree/1.2.1"
+            },
+            "time": "2021-04-22T13:09:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

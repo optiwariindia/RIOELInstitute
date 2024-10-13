@@ -1,0 +1,5 @@
+{
+    "require": {
+        "optiwariindia/database": "^1.2"
+    }
+}
