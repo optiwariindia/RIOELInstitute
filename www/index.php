@@ -1,37 +1,19 @@
 <?php 
-include "../vendor/autoload.php";
-include "../includes/connection.php";
-/* 
-schema: 
-CREATE TABLE `visitor` (
-  `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `name` text NOT NULL,
-  `email` text NOT NULL,
-  `phone` text NOT NULL,
-  `createdAt` datetime NOT NULL,
-  `updatedAt` timestamp NOT NULL
-);
+(function (){
+    
+    $include=explode(PATH_SEPARATOR,get_include_path());
+    $dir=__DIR__;
+    array_unshift($include,$dir);
+    $temp=explode(DIRECTORY_SEPARATOR,$dir);
+    array_pop($temp);
+    $dir=implode(DIRECTORY_SEPARATOR,$temp);
+    array_unshift($include,$dir);
+    set_include_path(implode(PATH_SEPARATOR,$include));
+    define("HOMEDIR",$dir);
+    define("CONFIG","config.json");
+})();
 
-INSERT INTO `visitor` (`name`, `email`, `phone`, `createdAt`, `updatedAt`)
-VALUES ('Om Prakash', 'optiwari.india@gmail.com', '+91 8130202879', now(), now());
-*/
-$page="/";
-if(isset($_REQUEST["name"]))
-file_put_contents("data.json",json_encode($_REQUEST));
-?><!DOCTYPE html>
-<html lang="en">
-    <?php include "../includes/head.php"; ?>
-<body>
-    <?php
-    include "../includes/header.php";
-    include "../includes/slider.php";
-    include "../includes/about.php";
-    include "../includes/courses.php";
-    (!isset($_REQUEST["name"]))?include "../includes/contactForm.php":include "../includes/thanks.php";
-    include "../includes/testimonials.php";
-    include "../includes/footer.php";
-    ?>
-    <script src="/js/script.js"></script>
-</body>
-</html>
-<?php
+include "../vendor/autoload.php";
+
+
+$cls=new \rioel\Controller();
