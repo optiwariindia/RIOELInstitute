@@ -5,24 +5,38 @@ class Controller extends \optiwariindia\website\view {
     public function __construct(){
         $url=Request::url();
         $page=[
-            "title"=>"Home Page",
+            "title"=>"404 Not Found",
             "keywords"=>"jfgh,ghjhg"
         ];
+        $method=["\\rioel\\Website","undefined"];
         switch (count($url)) {
             case 0:
                 exit (0);
             case 1:
-                if($url[0]=="")$page["title"]="Home Page";
-                else $page["title"]= strtoupper($url[0]);
+                $method=["\\rioel\\Website",strtolower($url[0])];
+                break;
             case 2:
             default:
                 # code...
                 break;
         }
-        self::dir(HOMEDIR.DIRECTORY_SEPARATOR."views");
-        self::init();
-        self::render("index.twig",[
+        
+        if(method_exists($method[0],$method[1])){
+        call_user_func_array($method,[]);
+    
+        }
+        self::show("index.twig",[
             "page"=>$page
         ]);
+    }
+    public static function show($view, $data=[]){
+        self::dir(HOMEDIR.DIRECTORY_SEPARATOR."views");
+        self::init();
+        self::render($view,$data);
+    }
+    public function test($name,$email){
+        echo $name;
+        echo "Test function has been called";
+        die;
     }
 }
