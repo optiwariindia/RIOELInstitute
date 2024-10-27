@@ -17,6 +17,7 @@ class Controller extends \optiwariindia\website\view {
                 break;
             case 2:
             default:
+                $method=["\\rioel\\".strtolower($url[0]),strtolower($url[1])];
                 # code...
                 break;
         }

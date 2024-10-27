@@ -66,6 +66,7 @@ class Website extends Controller{
         ]);
         self::api([
             "status"=>"success",
+            "data"=>$inputs,
             "message"=>[
                 "title"=>($resp['result']=="true")?"Submitted Successfully":"Something Went Wrong",
                 "text"=>($resp['result']=="true")?"

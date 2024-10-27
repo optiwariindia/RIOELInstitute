@@ -2,3 +2,10 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ / [NC,L,QSA]
+
+php_flag display_errors off
+# Enable mod_proxy if not enabled globally
+# <IfModule mod_proxy.c>
+#     ProxyPass /livereload http://rioel-livereload:35729/livereload 
+#     ProxyPassReverse /livereload http://rioel-livereload:35729/livereload
+# </IfModule>

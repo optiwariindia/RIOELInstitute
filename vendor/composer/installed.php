@@ -3,7 +3,7 @@
         'name' => 'rioel/website',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '70d106ae0d20ff35666a87ee899f751fe6b32bb5',
+        'reference' => '9f142b48d8d26059a2d77757e89e54429e3b8d17',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -49,7 +49,7 @@
         'rioel/website' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '70d106ae0d20ff35666a87ee899f751fe6b32bb5',
+            'reference' => '9f142b48d8d26059a2d77757e89e54429e3b8d17',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

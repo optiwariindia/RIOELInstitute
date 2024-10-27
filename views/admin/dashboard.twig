@@ -1,0 +1,33 @@
+{% include "comp/head.twig" %}
+<body>
+	<div class="flex-end">
+		<a href="/admin/logout" class="btn btn-danger">Logout</a>
+</div>
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Contact Requests</div>
+			</div>
+			<div class="card-body">
+				<table>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>E-Mail</th>
+						<th>Phone</th>
+					</tr>
+					{% for contact in contacts %}
+						<tr>
+							<td>{{contact.id}}</td>
+							<td>{{contact.name}}</td>
+							<td>{{contact.email}}</td>
+							<td>{{contact.phone}}</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+	 <script src="/js/script.js"></script>
+	 <script src="/livereload/livereload.js"></script>
+</body>

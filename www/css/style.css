@@ -42,3 +42,15 @@ input.skipped.form-control:invalid{
     color:blue;
     font-size:12px;
 }
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid black; */
+    width:100%;
+}
+.flex-end{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
