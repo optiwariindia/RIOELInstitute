@@ -1,5 +1,20 @@
 {
+    "name": "rioel/website",
+    "description": "Website for RIOEL",
+    "type": "project",
     "require": {
-        "optiwariindia/database": "^1.2"
-    }
+        "optiwariindia/website": "^1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "rioel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Om Prakash Tiwari",
+            "email": "optiwari.india@gmail.com"
+        }
+    ]
 }
